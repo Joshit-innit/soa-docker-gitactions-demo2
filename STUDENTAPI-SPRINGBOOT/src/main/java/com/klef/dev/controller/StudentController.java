@@ -66,7 +66,9 @@ public class StudentController {
             studentService.deleteStudentById(id);
             return new ResponseEntity<>("Student with ID " + id + " deleted successfully.", HttpStatus.OK);
         } else {
-            return new ResponseEntity<>("Cannot delete. Student with ID " + id + " not found.", HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>("Cannot delete. Student with ID " + id + " not found!", HttpStatus.NOT_FOUND);
         }
     }
 }
+
+// hehehe
