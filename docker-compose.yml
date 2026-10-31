@@ -17,7 +17,7 @@ services:
     image: tammanajoshit/docker-git-actions-backend:latest
     container_name: docker-springboot
     ports:
-"
+      - "2025:2000"
     depends_on:
       - postgresdb
     restart: on-failure
